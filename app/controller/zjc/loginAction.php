@@ -1,6 +1,6 @@
 <?php
 	header("Content-Type:text/html;charset=utf-8");
-	require_once("../model/user.class.php");
+	require_once("../../model/user.class.php");
 
 	$userName = $_POST["userName"];
 	$password = $_POST["password"];
@@ -13,10 +13,10 @@
 		$user = new User($userName,$password);
 		$userName = $user->login();
 		if( $userName == null ){
-			$url = "../../view/zjc/fail.php?mess=登录失败";
+			$url = "../../../view/zjc/fail.php?mess=登录失败";
 			Header("Location: $url");  
 		}else{
-			$url = "../../view/zjc/success.php?mess=".$userName;
+			$url = "../../../view/zjc/success.php?mess=".$userName;
 			Header("Location: $url");  
 		}
 		

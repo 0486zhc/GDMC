@@ -26,7 +26,7 @@
 
 	<div class="container width80 pt20">
 		<form name="register" method="post"
-			action="../../app/controller/registerAction.php"
+			action="../../app/controller/zjc/registerAction.php"
 			id="aspnetForm" class="form-horizontal" onsubmit = "checkRegister();">
 			<div>
 				<input type="hidden" name="__EVENTTARGET" id="__EVENTTARGET"
@@ -35,7 +35,7 @@
 					name="__VIEWSTATE" id="__VIEWSTATE"
 					value="/wEPDwUKLTE4MTUwOTMzMA9kFgJmD2QWAgIBD2QWAgIBD2QWAgILDxYCHgRocmVmBSwvUmVnLmFzcHg/UmV0dXJuVXJsPSUyZk1lbWJlciUyZkRlZmF1bHQuYXNweGQYAQUeX19Db250cm9sc1JlcXVpcmVQb3N0QmFja0tleV9fFgEFJmN0bDAwJENvbnRlbnRQbGFjZUhvbGRlcjEkY2JTYXZlQ29va2ll5P758eqt18XT06y04yVxkKJyzYw=" />
 			</div>
-
+	
 			<input type="hidden" name="webChatId" id="webChatId" placeholder="id" value="<?php echo $_GET['webChatId'] ?>">
 			
 			<div class="control-group" name = "a">

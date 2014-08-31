@@ -1,6 +1,6 @@
 <?php
 	header("Content-Type:text/html;charset=utf-8");
-	require_once("../model/user.class.php");
+	require_once("../../model/user.class.php");
 	
 	$userName = $_POST["userName"];
 	$password = $_POST["password"];
@@ -11,13 +11,21 @@
 	
 	echo "webChatId = ".$webChatId;
 	$user = new User($userName,$password,$name,$sex,$mobile,$webChatId);
-	echo $user->insert();
+	$result =  $user->insert();
 	
-	$users = User::getAllUser();
+	if($result == 1){
+		$url = "../../../view/zjc/success.php?mess=注册成功";
+			Header("Location: $url");  
+	}else{
+			$url = "../../../view/zjc/fail.php?mess=注册失败";
+			Header("Location: $url");  
+	}
 	
-	echo "总页数".User::getUsersCount();
 	
-	
+//	$users = User::getAllUser();
+//	
+//	echo "总页数".User::getUsersCount();
+//	
 //	foreach($users as $u){
 ////		echo $u->userName;
 //		echo $u->webChatId;

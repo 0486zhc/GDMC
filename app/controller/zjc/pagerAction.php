@@ -1,6 +1,6 @@
 <?php
-	include_once("../model/pager.class.php");
-	require_once("../model/user.class.php");
+	include_once("../../model/pager.class.php");
+	require_once("../../model/user.class.php");
 	define('pageSize',2);
 	
 	echo pageSize;

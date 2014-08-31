@@ -1,5 +1,7 @@
 <?php
-require_once ("../db/db.class.php");
+	define('basePath2',$_SERVER['DOCUMENT_ROOT']);			// 路径问题，待改
+    require_once(basePath2."/GDMC/app/db/db.class.php"); 
+//require_once ("../db/db.class.php");
 
 class User {
 	

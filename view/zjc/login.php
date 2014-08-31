@@ -26,7 +26,7 @@
 
         
     <div class="container width80 pt20">
- <form name="aspnetForm" method="post" action="../../app/controller/loginAction.php" id="aspnetForm" class="form-horizontal">
+ <form name="aspnetForm" method="post" action="../../app/controller/zjc/loginAction.php" id="aspnetForm" class="form-horizontal">
 <div>
 <input type="hidden" name="__EVENTTARGET" id="__EVENTTARGET" value="" />
 <input type="hidden" name="__EVENTARGUMENT" id="__EVENTARGUMENT" value="" />
