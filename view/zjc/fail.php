@@ -13,21 +13,28 @@
 </head>
 <body>
  <div class="header">
- <a href="" class="home">
+ <a href="Default.htm" class="home">
             <span class="header-icon header-icon-home"></span>
             <span class="header-name">主页</span>
 </a>
-<div class="title" id="titleString">成 功</div>
+<div class="title" id="titleString">失 败</div>
 <a href="javascript:history.go(-1);" class="back">
             <span class="header-icon header-icon-return"></span>
             <span class="header-name">返回</span>
         </a>
  </div>
 
-	<br/>
-	
-	<br/>
-  <div class="control-group">
+        
+    <div class="container width80 pt20">
+ <form name="aspnetForm" method="post" action="../../app/controller/loginAction.php" id="aspnetForm" class="form-horizontal">
+<div>
+<input type="hidden" name="__EVENTTARGET" id="__EVENTTARGET" value="" />
+<input type="hidden" name="__EVENTARGUMENT" id="__EVENTARGUMENT" value="" />
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="/wEPDwUKLTE4MTUwOTMzMA9kFgJmD2QWAgIBD2QWAgIBD2QWAgILDxYCHgRocmVmBSwvUmVnLmFzcHg/UmV0dXJuVXJsPSUyZk1lbWJlciUyZkRlZmF1bHQuYXNweGQYAQUeX19Db250cm9sc1JlcXVpcmVQb3N0QmFja0tleV9fFgEFJmN0bDAwJENvbnRlbnRQbGFjZUhvbGRlcjEkY2JTYXZlQ29va2ll5P758eqt18XT06y04yVxkKJyzYw=" />
+</div>
+
+
+ <div class="control-group">
          <button onclick="__doPostBack('ctl00$ContentPlaceHolder1$btnOK','')" id="ctl00_ContentPlaceHolder1_btnOK" class="btn-large green button width100"><?php echo $_GET['mess'] ?></button>
   </div>
   

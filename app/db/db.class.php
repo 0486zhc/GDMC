@@ -1,6 +1,6 @@
 <?php
 	define('basePath',$_SERVER['DOCUMENT_ROOT']);
-    require_once(basePath."/Login/db/config.php");   //引入配置常量文件
+    require_once(basePath."/GDMC/config/config.php");   //引入配置常量文件
     
     
     date_default_timezone_set(TIMEZONE);  

@@ -1,17 +1,4 @@
 
-function checkRegister(){
-	return false;
-	
-	
-	if( checkUserName() ){
-		
-		return false;
-	}eles{
-		return false;
-	}
-}
-
-
 function checkUserName(){
 	var userName=document.getElementById("userName").value;
 	var userNameError=document.getElementById("userNameError");

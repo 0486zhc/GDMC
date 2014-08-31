@@ -13,10 +13,10 @@
 		$user = new User($userName,$password);
 		$userName = $user->login();
 		if( $userName == null ){
-			$url = "../../view/fail.php?mess=登录失败";
+			$url = "../../view/zjc/fail.php?mess=登录失败";
 			Header("Location: $url");  
 		}else{
-			$url = "../../view/success.php?mess=".$userName;
+			$url = "../../view/zjc/success.php?mess=".$userName;
 			Header("Location: $url");  
 		}
 		

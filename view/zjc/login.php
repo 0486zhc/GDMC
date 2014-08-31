@@ -7,9 +7,9 @@
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0;" />
 	<meta content="yes" name="apple-mobile-web-app-capable" />
-	<link href="../css/bootstrap.min.css" rel="stylesheet" />
-	<link href="../css//NewGlobal.css" rel="stylesheet" />
-    <script type="text/javascript" src="../js/zepto.js"></script>
+	<link href="../../css/bootstrap.min.css" rel="stylesheet" />
+	<link href="../../css//NewGlobal.css" rel="stylesheet" />
+    <script type="text/javascript" src="../../js/zepto.js"></script>
 </head>
 <body>
  <div class="header">
@@ -26,7 +26,7 @@
 
         
     <div class="container width80 pt20">
- <form name="aspnetForm" method="post" action="../app/controller/loginAction.php" id="aspnetForm" class="form-horizontal">
+ <form name="aspnetForm" method="post" action="../../app/controller/loginAction.php" id="aspnetForm" class="form-horizontal">
 <div>
 <input type="hidden" name="__EVENTTARGET" id="__EVENTTARGET" value="" />
 <input type="hidden" name="__EVENTARGUMENT" id="__EVENTARGUMENT" value="" />
