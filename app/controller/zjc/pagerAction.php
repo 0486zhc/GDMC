@@ -10,10 +10,6 @@
 	echo "<br/>";
 	
 	$users = User::getUsersPage( ($CurrentPage-1) * pageSize , pageSize);   // 获得对象
-	foreach($users as $user){
-		echo $user->userName;
-		echo "<br/>"; 
-	}
 	
 	echo "总记录数".User::getUsersCount();
 	$usersCount = User::getUsersCount();           // 获得记录数

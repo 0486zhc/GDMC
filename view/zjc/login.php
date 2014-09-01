@@ -63,7 +63,8 @@ function __doPostBack(eventTarget, eventArgument) {
   <div class="control-group">
    
       <label class="checkbox fl">
-          <input name="ctl00$ContentPlaceHolder1$cbSaveCookie" type="checkbox" id="ctl00_ContentPlaceHolder1_cbSaveCookie" style="float: none;margin-left: 0px;" /> 记住账号
+          <input name="ctl00$ContentPlaceHolder1$cbSaveCookie" type="checkbox" id="ctl00_ContentPlaceHolder1_cbSaveCookie" 
+          		 style="float: none;margin-left: 0px;" /> 记住账号
       </label>
      <a class="fr" href="GetPassword.aspx">忘记密码？</a>
  
@@ -72,7 +73,8 @@ function __doPostBack(eventTarget, eventArgument) {
        <span class="red"></span>
    </div>
   <div class="control-group">
-         <button onclick="__doPostBack('ctl00$ContentPlaceHolder1$btnOK','')" id="ctl00_ContentPlaceHolder1_btnOK" class="btn-large green button width100">立即登陆</button>
+         <button onclick="__doPostBack('ctl00$ContentPlaceHolder1$btnOK','')" 
+         			id="ctl00_ContentPlaceHolder1_btnOK" class="btn-large green button width100">立即登陆</button>
   </div>
     <div class="control-group">
          还没账号？<a href="register.php" id="ctl00_ContentPlaceHolder1_RegBtn">立即免费注册</a>

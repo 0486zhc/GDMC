@@ -2,26 +2,71 @@
 	header("Content-Type:text/html;charset=utf-8");
 	require_once("../../model/user.class.php");
 
-	$userName = $_POST["userName"];
-	$password = $_POST["password"];
-	$flag = $_POST["flag"];
+//	$userName = check_input($_POST["userName"]);
+//	$password = check_input($_POST["password"]);
+//	
+////	$flag = $_POST["flag"];
+//	echo "账号=".$userName;
+//	echo "密码=".$password;
 	
-	
-	if( $userName==null || $password == null ){
-		echo "<script>alert('请输入用户名或密码！'); history.go(-1);</script>";  
-	}else{
-		$user = new User($userName,$password);
-		$userName = $user->login();
-		if( $userName == null ){
-			$url = "../../../view/zjc/fail.php?mess=登录失败";
-			Header("Location: $url");  
+	session_start();
+	if( !isset($_SESSION['userName']) ){                 // 没session
+		$userName = check_input($_POST["userName"]);
+		$password = check_input($_POST["password"]);
+		
+		if(!empty($userName) && !empty($password)){      // 非空
+			echo "1";
+			$user = new user($userName,$password);
+			$userName = $user->login();
+			if( $userName != null){
+				$_SESSION['userName'] = $userName;
+			}
+			$url = "test.php";
+			header('Location:'.$url);	
 		}else{
-			$url = "../../../view/zjc/success.php?mess=".$userName;
-			Header("Location: $url");  
+			echo "2";
+			$url = "../../../view/zjc/fail.php?mess=请重新登录";
+		}
+		header('Location:'.$url);		
+	}else{
+		echo "3";
+		$url = "../../../view/zjc/success.php?mess=已登录";
+		header('Location:'.$url);
+	}
+	
+	
+	// 检查输入数据，防止注入式攻击
+	function check_input($value){
+		// 去除斜杠
+		if (get_magic_quotes_gpc()) {
+		 	 $value = stripslashes($value);
 		}
 		
-		
+		// 如果不是数字则加引号
+		if (!is_numeric($value)) {
+		 	 $value = "'" . mysql_real_escape_string($value) . "'";
+		}
+		return $value;
 	}
+	
+	
+	
+	
+//	if( $userName==null || $password == null ){
+//		echo "<script>alert('请输入用户名或密码！'); history.go(-1);</script>";  
+//	}else{
+//		$user = new User($userName,$password);
+//		$userName = $user->login();
+//		if( $userName == null ){
+//			$url = "../../../view/zjc/fail.php?mess=登录失败";
+//			Header("Location: $url");  
+//		}else{
+//			$url = "../../../view/zjc/success.php?mess=".$userName;
+//			Header("Location: $url");  
+//		}
+//		
+//		
+//	}
 
 	
 

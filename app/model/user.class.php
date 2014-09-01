@@ -69,7 +69,6 @@ class User {
 		$userName = $this->userName;
 		$password = $this->password;
 		@ $data = $db->getObjListBySql("SELECT * FROM user WHERE userName = '$userName' and password = '$password' ");
-		
 		if (count($data) != 0)
 			return $data[0]->userName;
 		else
