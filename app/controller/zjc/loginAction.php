@@ -2,13 +2,6 @@
 	header("Content-Type:text/html;charset=utf-8");
 	require_once("../../model/user.class.php");
 
-//	$userName = check_input($_POST["userName"]);
-//	$password = check_input($_POST["password"]);
-//	
-////	$flag = $_POST["flag"];
-//	echo "账号=".$userName;
-//	echo "密码=".$password;
-	
 	session_start();
 	if( !isset($_SESSION['userName']) ){                 // 没session
 		$userName = check_input($_POST["userName"]);
@@ -29,7 +22,7 @@
 		}
 		header('Location:'.$url);		
 	}else{
-		echo "3";
+		// 主页面
 		$url = "../../../view/zjc/success.php?mess=已登录";
 		header('Location:'.$url);
 	}
@@ -37,6 +30,8 @@
 	
 	// 检查输入数据，防止注入式攻击
 	function check_input($value){
+		// 去前后空格
+		$value = trim($value);
 		// 去除斜杠
 		if (get_magic_quotes_gpc()) {
 		 	 $value = stripslashes($value);

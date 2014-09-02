@@ -5,12 +5,16 @@
 
 class User {
 	
+	// 字段名 一定要跟 数据一样
+	public $id = null;
 	public $userName = NULL;
 	public $password = NULL;
 	public $name = null;
 	public $sex = null;
 	public $mobile= null;
-	public $webChatId = null;
+	public $webChat_id = null;
+	public $register_time = null;
+	public $info = null;
 	
 	
 	/**
