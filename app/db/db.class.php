@@ -97,11 +97,11 @@
 //			$id = mysql_insert_id($this->conn);
 //			$this->close();
 			if(mysql_query($sql,$this->conn)){
-					return 1;
+					return true;
 			}else{
 				
 				echo "执行SQL失败:$sql<BR>错误:".mysql_error()."<br/>";
-				return 0;
+				return false;
 			}
 			
 						
