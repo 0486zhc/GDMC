@@ -12,13 +12,14 @@
 	echo "webChatId = ".$webChatId;
 	$user = new User($userName,$password,$name,$sex,$mobile,$webChatId);
 	$result =  $user->insert();
-	
 	if($result == 1){
+		session_start();
+		$_SESSION['userName'] = $userName;	
 		$url = "../../../view/zjc/success.php?mess=注册成功";
-			Header("Location: $url");  
+		Header("Location: $url");  
 	}else{
-			$url = "../../../view/zjc/fail.php?mess=注册失败";
-			Header("Location: $url");  
+		$url = "../../../view/zjc/fail.php?mess=注册失败";
+		Header("Location: $url");  
 	}
 	
 	

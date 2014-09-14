@@ -1,48 +1,28 @@
 <?php
 	header("Content-Type:text/html;charset=utf-8");
+	require_once("../Filter.php");
 	require_once("../../model/user.class.php");
 
 	session_start();
-	if( !isset($_SESSION['userName']) ){                 // 没session
-		$userName = check_input($_POST["userName"]);
-		$password = check_input($_POST["password"]);
-		
-		if(!empty($userName) && !empty($password)){      // 非空
-			echo "1";
-			$user = new user($userName,$password);
-			$userName = $user->login();
-			if( $userName != null){
-				$_SESSION['userName'] = $userName;
-			}
-			$url = "test.php";
-			header('Location:'.$url);	
-		}else{
-			echo "2";
-			$url = "../../../view/zjc/fail.php?mess=请重新登录";
-		}
-		header('Location:'.$url);		
-	}else{
-		// 主页面
-		$url = "../../../view/zjc/success.php?mess=已登录";
+	$userName = check_input($_POST["userName"]);
+	$password = check_input($_POST["password"]);
+	
+	if(  empty($userName) || empty($password)){      // 非空
+		$url = "../../../view/zjc/login.php?mess=不能为空";
 		header('Location:'.$url);
 	}
 	
 	
-	// 检查输入数据，防止注入式攻击
-	function check_input($value){
-		// 去前后空格
-		$value = trim($value);
-		// 去除斜杠
-		if (get_magic_quotes_gpc()) {
-		 	 $value = stripslashes($value);
-		}
-		
-		// 如果不是数字则加引号
-		if (!is_numeric($value)) {
-		 	 $value = "'" . mysql_real_escape_string($value) . "'";
-		}
-		return $value;
+	$user = new user($userName,$password);
+	$userName = $user->login();
+	if( $userName == null){
+		$url = "../../../view/zjc/login.php?mess=用户不存在，请重新登录";
+		header('Location:'.$url);
 	}
+	
+	$_SESSION['userName'] = $userName;
+	$url = "../../../view/main.php";
+	header('Location:'.$url);		
 	
 	
 	

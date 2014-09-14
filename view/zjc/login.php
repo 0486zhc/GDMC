@@ -55,11 +55,24 @@ function __doPostBack(eventTarget, eventArgument) {
 	<input type="hidden" name="__EVENTVALIDATION" id="__EVENTVALIDATION" value="/wEWBQLZmqilDgLJ4fq4BwL90KKTCAKqkJ77CQKI+JrmBdPJophKZ3je4aKMtEkXL+P8oASc" />
 </div>
   <div class="control-group">
-      <input name="userName" type="text" id="ctl00_ContentPlaceHolder1_txtUserName" class="input width100 " style="background: none repeat scroll 0 0 #F9F9F9;padding: 8px 0px 8px 4px" placeholder="请输入手机号/身份证/会员卡号" />
+      <input name="userName" type="text" id="ctl00_ContentPlaceHolder1_txtUserName" class="input width100 " 
+      			style="background: none repeat scroll 0 0 #F9F9F9;padding: 8px 0px 8px 4px" placeholder="请输入学号" />
   </div>
   <div class="control-group">
-      <input name="password" type="password" id="ctl00_ContentPlaceHolder1_txtPassword" class="width100 input" style="background: none repeat scroll 0 0 #F9F9F9;padding: 8px 0px 8px 4px" placeholder="默认密码为证件号后4位" />
+      <input name="password" type="password" id="ctl00_ContentPlaceHolder1_txtPassword" class="width100 input" 
+      		style="background: none repeat scroll 0 0 #F9F9F9;padding: 8px 0px 8px 4px" placeholder="默认密码" />
   </div>
+  
+  <div class="control-group" align = "center">
+		<span class="red">
+			<?php  
+  			if( isset($_GET["mess"]) ){
+  				echo $_GET["mess"];
+  			}  
+  		?>
+		</span>
+  </div>
+
   <div class="control-group">
    
       <label class="checkbox fl">

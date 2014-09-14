@@ -1,5 +1,6 @@
 <?php
 	header("Content-Type:text/html;charset=utf-8");
+	require_once("../Filter.php");
 	require_once("../../model/repair.class.php");
 	// 报修
 	$dept = check_input($_POST["dept"]);

@@ -1,7 +1,9 @@
 <?php
+	require_once("../Filter.php");
 	include_once("../../model/pager.class.php");
 	require_once("../../model/user.class.php");
 	require_once("../../model/repair.class.php");
+	
 	define('pageSize',2);     // 定义页面  显示记录数
 	
 	$CurrentPage = isset ($_GET['page']) ? $_GET['page'] : 1;   
