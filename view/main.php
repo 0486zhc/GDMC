@@ -18,10 +18,10 @@
 	<button type="button" ><a href="./zjc/repair.php"/> 报  修</button>
 	<br/>
 	
-	<button type="button" ><a href="http://localhost/GDMC/app/controller/zjc/pagerAction.php?type=1"/> 用户查询</button>
+	<button type="button" ><a href="../app/controller/zjc/pagerAction.php?type=1"/> 用户查询</button>
 	<br/>
 	
-	<button type="button" ><a href="http://localhost/GDMC/app/controller/zjc/pagerAction.php?type=2"/> 报修查询</button>
+	<button type="button" ><a href="../app/controller/zjc/pagerAction.php?type=2"/> 报修查询</button>
 	<br/>
 </body>
 </html>

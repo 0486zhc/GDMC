@@ -2,7 +2,7 @@
 <!DOCTYPE html>
 <html>
 <head><title>
-	广医微微
+	报修
 </title>
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0;" />
@@ -41,13 +41,13 @@
       部门：<input name="dept" type="text" id="ctl00_ContentPlaceHolder1_txtUserName" class="input width100 " style="background: none repeat scroll 0 0 #F9F9F9;padding: 8px 0px 8px 4px" placeholder="请输入手机号/身份证/会员卡号" />
   </div>
   <div class="control-group">
-      提交人：<input name="submitter" type="password" id="ctl00_ContentPlaceHolder1_txtPassword" class="width100 input" style="background: none repeat scroll 0 0 #F9F9F9;padding: 8px 0px 8px 4px" placeholder="默认密码为证件号后4位" />
+      提交人：<input name="submitter" type="text" id="ctl00_ContentPlaceHolder1_txtPassword" class="width100 input" style="background: none repeat scroll 0 0 #F9F9F9;padding: 8px 0px 8px 4px" placeholder="默认密码为证件号后4位" />
   </div>
   <div class="control-group">
-      地点：<input name="place" type="password" id="ctl00_ContentPlaceHolder1_txtPassword" class="width100 input" style="background: none repeat scroll 0 0 #F9F9F9;padding: 8px 0px 8px 4px" placeholder="默认密码为证件号后4位" />
+      地点：<input name="place" type="text" id="ctl00_ContentPlaceHolder1_txtPassword" class="width100 input" style="background: none repeat scroll 0 0 #F9F9F9;padding: 8px 0px 8px 4px" placeholder="默认密码为证件号后4位" />
   </div>
   <div class="control-group">
-      报修原因：<input name="reason" type="password" id="ctl00_ContentPlaceHolder1_txtPassword" class="width100 input" style="background: none repeat scroll 0 0 #F9F9F9;padding: 8px 0px 8px 4px" placeholder="默认密码为证件号后4位" />
+      报修原因：<input name="reason" type="text" id="ctl00_ContentPlaceHolder1_txtPassword" class="width100 input" style="background: none repeat scroll 0 0 #F9F9F9;padding: 8px 0px 8px 4px" placeholder="默认密码为证件号后4位" />
   </div>
      <div class="control-group">
        <span class="red"></span>
@@ -64,7 +64,7 @@
 
   <div class="footer">
   <div class="gezifooter">
-    <p style="color:#bbb;">格子微酒店连锁 &copy; 版权所有 2012-2014</p>
+    <p style="color:#bbb;">&COPY;2014 广东医学院版权所有</p>
   </div>
   </div>
 
