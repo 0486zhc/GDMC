@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>东莞市人民医院</title>
+<title>广东医学院</title>
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0;" />
 	<meta content="yes" name="apple-mobile-web-app-capable" />
@@ -15,10 +15,10 @@
 
 <body>
 	<div class="header">
-		<a href="../index.jsp" class="home"> <span
+		<a href="../main.php" class="home"> <span
 			class="header-icon header-icon-home"></span> <span
 			class="header-name">主页</span> </a>
-		<div class="title" id="titleString">注册</div>
+		<div class="title" id="titleString">绑定个人信息</div>
 		<a href="javascript:history.go(-1);" class="back"> <span
 			class="header-icon header-icon-return"></span> <span
 			class="header-name">返回</span> </a>
@@ -42,7 +42,7 @@
 				账号：<input name="userName" type="text"
 					id="userName" class="input width100 "
 					style="background: none repeat scroll 0 0 #F9F9F9;padding: 8px 0px 8px 4px"
-					placeholder="请输入账号" onblur="checkUserName()"/>
+					placeholder="请输入您的11位学号" onblur="checkUserName()"/>
 			</div>
 			<div  id="userNameError" align = "center" style="color:#F00" > </div>  
 			
@@ -71,7 +71,6 @@
 					id="sex" class="width100 input"
 					style="background: none repeat scroll 0 0 #F9F9F9;padding: 8px 0px 8px 4px" value="女" checked/>女
 			</div>
-			<div  i
 			
 			<div class="control-group">
 				联系方式：<input name="mobile" type="text"
@@ -88,7 +87,7 @@
 			<div class="control-group">
 				<button onclick="__doPostBack('ctl00$ContentPlaceHolder1$btnOK','')"
 					id="ctl00_ContentPlaceHolder1_btnOK"
-					class="btn-large green button width100" onClick="checkRegister()">立即注册</button>
+					class="btn-large green button width100" onClick="checkRegister()">立即绑定</button>
 			</div>
 			
 		</form>
@@ -96,18 +95,10 @@
 
 
 	<div class="footer">
-		<div class="gezifooter">
-
-			<a href="<%=basePath%>PhoneWeb/WebTwo/login.jsp" class="ui-link">立即登陆</a> <font color="#878787">|</font>
-			<a href="<%=basePath%>PhoneWeb/WebTwo/register.jsp" class="ui-link">免费注册</a> <font color="#878787">|</font>
-
-
-			<a href="<%=basePath %>jsp/page/login.jsp" class="ui-link">电脑版</a>
-		</div>
-		<div class="gezifooter">
-			<p style="color:#bbb;"> &copy; 版权所有 2012-2014</p>
-		</div>
-	</div>
+	  <div class="gezifooter">
+	    <p style="color:#bbb;">&COPY;2014 广东医学院版权所有</p>
+	  </div>
+    </div>
 
 </body>
 </html>

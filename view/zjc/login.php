@@ -2,7 +2,7 @@
 <!DOCTYPE html>
 <html>
 <head><title>
-	广医微微
+	广东医学院
 </title>
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0;" />
@@ -13,7 +13,7 @@
 </head>
 <body>
  <div class="header">
- <a href="" class="home">
+ <a href="../main.php" class="home">
             <span class="header-icon header-icon-home"></span>
             <span class="header-name">主页</span>
 </a>
@@ -102,17 +102,9 @@ function __doPostBack(eventTarget, eventArgument) {
 
 
   <div class="footer">
-  <div class="gezifooter">
-      
-      <a href="login.php" class="ui-link">立即登陆</a> <font color="#878787">|</font> 
-       <a href="register.php" class="ui-link">免费注册</a> <font color="#878787">|</font>                 
-                  
-
-       <a href="../www.gridinn.com/@display=pc" class="ui-link">电脑版</a>
-  </div>
-  <div class="gezifooter">
-    <p style="color:#bbb;">格子微酒店连锁 &copy; 版权所有 2012-2014</p>
-  </div>
+	  <div class="gezifooter">
+	    <p style="color:#bbb;">&COPY;2014 广东医学院版权所有</p>
+	  </div>
   </div>
 
 </body>

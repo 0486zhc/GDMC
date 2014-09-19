@@ -12,7 +12,7 @@
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 	<meta http-equiv="Content-Language" content="en" />
 	<meta name="GENERATOR" content="PHPEclipse 1.2.0" />
-	<title>用户</title>
+	<title>广东医学院</title>
 </head>
 <body>
 	<table align="center">

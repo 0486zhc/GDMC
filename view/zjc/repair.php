@@ -2,7 +2,7 @@
 <!DOCTYPE html>
 <html>
 <head><title>
-	报修
+	广东医学院
 </title>
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0;" />
@@ -13,11 +13,11 @@
 </head>
 <body>
  <div class="header">
- <a href="" class="home">
+ <a href="../main.php" class="home">
             <span class="header-icon header-icon-home"></span>
             <span class="header-name">主页</span>
 </a>
-<div class="title" id="titleString">报修</div>
+<div class="title" id="titleString">课室座椅报修</div>
 <a href="javascript:history.go(-1);" class="back">
             <span class="header-icon header-icon-return"></span>
             <span class="header-name">返回</span>
@@ -35,26 +35,32 @@
 
 
 	<div>
-		<input type="hidden" name="__EVENTVALIDATION" id="__EVENTVALIDATION" value="/wEWBQLZmqilDgLJ4fq4BwL90KKTCAKqkJ77CQKI+JrmBdPJophKZ3je4aKMtEkXL+P8oASc" />
+		<input type="hidden" name="webChat_id" id="__EVENTVALIDATION" value="/wEWBQLZmqilDgLJ4fq4BwL90KKTCAKqkJ77CQKI+JrmBdPJophKZ3je4aKMtEkXL+P8oASc" />
 	</div>
+	
   <div class="control-group">
-      部门：<input name="dept" type="text" id="ctl00_ContentPlaceHolder1_txtUserName" class="input width100 " style="background: none repeat scroll 0 0 #F9F9F9;padding: 8px 0px 8px 4px" placeholder="请输入手机号/身份证/会员卡号" />
+      报修类型：<input name="dept" type="text" id="ctl00_ContentPlaceHolder1_txtUserName" class="input width100 " style="background: none repeat scroll 0 0 #F9F9F9;padding: 8px 0px 8px 4px" placeholder="请输入手机号/身份证/会员卡号" />
   </div>
+  
   <div class="control-group">
-      提交人：<input name="submitter" type="text" id="ctl00_ContentPlaceHolder1_txtPassword" class="width100 input" style="background: none repeat scroll 0 0 #F9F9F9;padding: 8px 0px 8px 4px" placeholder="默认密码为证件号后4位" />
+      报修课室：<input name="place" type="text" id="ctl00_ContentPlaceHolder1_txtPassword" class="width100 input" style="background: none repeat scroll 0 0 #F9F9F9;padding: 8px 0px 8px 4px" placeholder="请输入课室号，如 A2-1" />
   </div>
+  
   <div class="control-group">
-      地点：<input name="place" type="text" id="ctl00_ContentPlaceHolder1_txtPassword" class="width100 input" style="background: none repeat scroll 0 0 #F9F9F9;padding: 8px 0px 8px 4px" placeholder="默认密码为证件号后4位" />
+      联系人：<input name="submitter" type="text" id="ctl00_ContentPlaceHolder1_txtPassword" class="width100 input" style="background: none repeat scroll 0 0 #F9F9F9;padding: 8px 0px 8px 4px" placeholder="默认密码为证件号后4位" />
   </div>
+  
   <div class="control-group">
       报修原因：<input name="reason" type="text" id="ctl00_ContentPlaceHolder1_txtPassword" class="width100 input" style="background: none repeat scroll 0 0 #F9F9F9;padding: 8px 0px 8px 4px" placeholder="默认密码为证件号后4位" />
   </div>
+  
      <div class="control-group">
        <span class="red"></span>
-   </div>
+   	 </div>
+   	 
   <div class="control-group">
          <button onclick="__doPostBack('ctl00$ContentPlaceHolder1$btnOK','')" 
-         			id="ctl00_ContentPlaceHolder1_btnOK" class="btn-large green button width100">提交</button>
+         			id="ctl00_ContentPlaceHolder1_btnOK" class="btn-large green button width100">提     交</button>
   </div>
    
   
@@ -63,9 +69,9 @@
 
 
   <div class="footer">
-  <div class="gezifooter">
-    <p style="color:#bbb;">&COPY;2014 广东医学院版权所有</p>
-  </div>
+	  <div class="gezifooter">
+	    <p style="color:#bbb;">&COPY;2014 广东医学院版权所有</p>
+	  </div>
   </div>
 
 </body>
